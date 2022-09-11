@@ -15,25 +15,25 @@
 		<form action="#" th:action="@{/save}" th:object="${product}"
 			method="post">
 
-			<table class="table table-dark">
+			<table>
 				<tr>
 					<td>Product Name:</td>
 					<td><input type="text" th:field="*{name}" class="form-control" /></td>
 				</tr>
 				<tr>
 					<td>Brand:</td>
-					<td><input type="text" th:field="*{brand}" /></td>
+					<td><input type="text" th:field="*{brand}"  class="form-control"/></td>
 				</tr>
 				<tr>
 					<td>Made In:</td>
-					<td><input type="text" th:field="*{madein}" /></td>
+					<td><input type="text" th:field="*{madein}"  class="form-control"/></td>
 				</tr>
 				<tr>
 					<td>Price:</td>
-					<td><input type="text" th:field="*{price}" /></td>
+					<td><input type="text" th:field="*{price}"  class="form-control"/></td>
 				</tr>								
 				<tr>
-					<td colspan="2"><button type="submit">Save</button> </td>
+					<td colspan="2"><button class="btn btn-info" type="submit">Save</button> </td>
 				</tr>
 			</table>
 		</form>
