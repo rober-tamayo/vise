@@ -28,4 +28,13 @@ public class ProductService {
 	public void delete(long id) {
 		repo.deleteById(id);
 	}
+	
+	public List<Product> listByBrand( String brand ) {
+		return repo.findAllByBrand(brand);
+	}
+	
+	public List<Product> listByPrice( float price ) {
+		return repo.findByPriceGreaterThanEqual(price);
+	}
+	
 }
