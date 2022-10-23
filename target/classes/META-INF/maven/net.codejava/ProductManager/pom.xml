@@ -45,6 +45,11 @@
 	        <artifactId>spring-boot-devtools</artifactId>
 	        <optional>true</optional>
 	    </dependency>
+	    <dependency>
+		    <groupId>org.webjars.npm</groupId>
+		    <artifactId>slim-select</artifactId>
+		    <version>1.27.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

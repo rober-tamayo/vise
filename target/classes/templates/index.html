@@ -6,6 +6,8 @@
 <!--  <script src="/webjars/jquery/jquery.min.js"></script>-->
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+
+
 <script type="text/javascript" th:src="@{/js/index.js}" defer/></script>
 <meta charset="utf-8"/>
 <title>Product Manager</title>
@@ -14,8 +16,9 @@
 <body>
 <div align="center">
     <h1>Product List</h1>
-    <a type="button" class="btn btn-primary" href="new">Create New Product</a>
+    <a type="button" class="btn btn-outline-primary" href="new">Create New Product</a>
     <br/><br/>
+    <select id="slecSlim"></select>
     <div id="filtros">
     	<div class="row">
 	    	<div class="col">
